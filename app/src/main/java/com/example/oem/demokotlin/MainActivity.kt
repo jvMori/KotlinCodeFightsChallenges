@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        palindromeRearranging("abba")
     }
 
     fun areSimilar(a: MutableList<Int>, b: MutableList<Int>): Boolean {
@@ -29,6 +30,12 @@ class MainActivity : AppCompatActivity() {
         return false
     }
 
+    fun palindromeRearranging(inputString: String): Boolean {
+        val set = inputString.toCharArray().distinct()
+        val filtered =  set.filter { c ->
+            inputString.count { it == c  } % 2 == 1}
 
+        return filtered.size < 2
+    }
 
 }
