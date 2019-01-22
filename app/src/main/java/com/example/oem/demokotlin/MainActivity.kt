@@ -12,5 +12,4 @@ class MainActivity : AppCompatActivity() {
         val palindromeRearranging = PalindromeRearranging()
         palindromeRearranging.palindromeRearranging("abba")
     }
-
 }
