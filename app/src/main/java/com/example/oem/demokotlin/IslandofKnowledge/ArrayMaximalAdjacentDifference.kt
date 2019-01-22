@@ -13,4 +13,7 @@ class ArrayMaximalAdjacentDifference{
 
         return maxValue
     }
+
+    fun arrayMaximalAdjacentDifferenceWithZip(inputArray: MutableList<Int>) =
+        inputArray.zip(inputArray.drop(1), { a, b -> Math.abs(a - b) }).max()
 }
