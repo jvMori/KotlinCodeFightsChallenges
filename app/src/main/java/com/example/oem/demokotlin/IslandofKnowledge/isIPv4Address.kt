@@ -12,5 +12,10 @@ class isIPv4Address {
             }
             return true
         }
+
+        fun isIPv4AddressOtherSolution(inputString: String): Boolean {
+            val tokens = inputString.split(".")
+            return tokens.size == 4 && tokens.all { it.toIntOrNull() in 0..255 }
+        }
     }
 }
