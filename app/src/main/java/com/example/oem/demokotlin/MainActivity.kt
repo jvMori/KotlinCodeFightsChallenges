@@ -3,6 +3,7 @@ package com.example.oem.demokotlin
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.oem.demokotlin.ExploringtheWaters.PalindromeRearranging
+import com.example.oem.demokotlin.IslandofKnowledge.isIPv4Address
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,5 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val palindromeRearranging = PalindromeRearranging()
         palindromeRearranging.palindromeRearranging("abba")
+        isIPv4Address.isIPv4Address(".254.255.0")
     }
+
 }
