@@ -14,6 +14,4 @@ class MainActivity : AppCompatActivity() {
         palindromeRearranging.palindromeRearranging("abba")
         isIPv4Address.isIPv4Address(".254.255.0")
     }
-
-
 }
