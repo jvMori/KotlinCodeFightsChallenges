@@ -15,5 +15,4 @@ class MainActivity : AppCompatActivity() {
         isIPv4Address.isIPv4Address(".254.255.0")
     }
 
-
 }
