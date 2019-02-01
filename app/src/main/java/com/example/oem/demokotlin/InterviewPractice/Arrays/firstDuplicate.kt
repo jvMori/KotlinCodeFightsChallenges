@@ -1,4 +1,4 @@
-package com.example.oem.demokotlin.InterviewPractice
+package com.example.oem.demokotlin.InterviewPractice.Arrays
 
 fun firstDuplicateSlow(a: MutableList<Int>): Int {
     var min = 100000000
