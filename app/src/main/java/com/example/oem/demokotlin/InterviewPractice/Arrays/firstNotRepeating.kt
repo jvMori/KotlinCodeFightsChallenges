@@ -21,6 +21,12 @@ class firstNorRepeating{
             s.forEachIndexed { i, c ->  if(i == s.lastIndexOf(c) && i == s.indexOf(c)) return c }
             return '_'
         }
+
+        fun firstNotRepeatingCharacterOtherSol(s: String): Char =
+            s.groupingBy { it }.eachCount()
+                .filter { it.value == 1 }
+                .toList()
+                .firstOrNull()?.first ?: '_'
     }
 
 }
