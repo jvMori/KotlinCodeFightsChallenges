@@ -27,6 +27,7 @@ class firstNorRepeating{
                 .filter { it.value == 1 }
                 .toList()
                 .firstOrNull()?.first ?: '_'
+
     }
 
 }
